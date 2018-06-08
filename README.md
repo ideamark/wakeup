@@ -1,11 +1,11 @@
 ## Overview
-* Wakeup is an Arduino project for waking up your remote PC.
+Wakeup is an Arduino project for waking up your remote PC.
 ![photo](images/photo.jpg)
 
-# How to make it work
+## How to make it work
 1. Make sure your PC network card supports WOL.
 2. You need an Arduino board with Ethernet module and a Wi-Fi smart power strip.
-3. Replace the Target MAC address in source code with your PC network card MAC address.
+3. Replace the Target MAC address in source code with your PC network card MAC address. Then download the code to your Arduino board.
 ![code](images/code.jpg)
 4. Connect them like that:
 ![connect](images/connect.jpg)
