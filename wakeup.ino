@@ -14,8 +14,8 @@ EthernetUDP Udp;
 
 //Please set the values first
 int localPort = 5009;
-IPAddress arduinoIp(192, 168, 1, 190);
-IPAddress targetIp(192, 168, 1, 255);
+IPAddress arduinoIp(192, 168, 1, 2);
+IPAddress targetIp(255, 255, 255, 255);
 byte arduinoMac[] = { 0xDE, 0xAD, 0xBE, 0x06, 0xFE, 0xED };
 byte targetMac[] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
 
@@ -24,7 +24,7 @@ void setup() {
   Ethernet.begin(arduinoMac, arduinoIp);
   Udp.begin(localPort);
   delay(5000);
-  for(i = 0; i < 5; i++) {
+  for(i = 0; i < 10; i++) {
   sendPkt();
   delay(3000);
   }
