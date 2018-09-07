@@ -8,4 +8,4 @@ Wakeup is an Arduino project to keep your PC power on with ethernet.
 3. Replace the Target MAC address in source code with your PC network card MAC address. Then download the code to your Arduino board.
 ![code](images/code.jpg)
 4. Connect your Arduino board to the router.
-5. Then it works, Arduino will send a "magic package" to your PC every 10 secs and keep it power off.
+5. Then it works, Arduino will send a "magic package" to your PC every 10 secs and keep it power on.
